@@ -1,0 +1,164 @@
+// productos ***************************************************************
+
+// Outer Container
+
+@media screen and (min-width: 992px) {
+    .outer-container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .no-padding {
+      padding: 0;
+    }
+  }
+  
+  #Blog .blog-page {
+    padding-top: 15px;
+  }
+  
+  .blog-page .blog-content figure,
+  .blog-page .blog-content .entry-content {
+    width: 75%;
+  }
+  
+  .blog-page .blog-content figure {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .blog-page .blog-content figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .blog-page .blog-content .entry-content {
+    padding: 25px;
+  }
+  
+  .blog-page .blog-content {
+    transition: all .35s;
+  }
+  
+  .blog-page .blog-content:hover {
+    background: $color3;
+  }
+  
+  .blog-page .blog-content header {
+    width: 100%;
+  }
+  
+  .blog-page .blog-content .entry-content h3 {
+    position: relative;
+  }
+  
+  .blog-page .blog-content .entry-content h3::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -35px;
+    z-index: 99;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: #fff;
+  }
+  
+  .blog-page .blog-content .entry-content h3 a {
+    color: $color3;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .blog-page .blog-content .posted-by {
+    margin-top: 10px;
+    color: $color2;
+    font-size: 0.875rem;
+  }
+  
+  .blog-page .blog-content .posted-on {
+    position: relative;
+    margin-right: 20px;
+    color: $color4;
+    font-size: 0.875rem;
+  }
+  
+  .blog-page .blog-content .posted-on::after {
+    content: '/';
+    position: absolute;
+    top: 0;
+    right: -14px;
+  }
+  
+  .blog-page .blog-content footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .blog-page .blog-content footer li {
+    padding: 0 3px;
+    font-size: 0.875rem;
+  }
+  
+  .blog-page .blog-content footer li a {
+    color: $color6;
+  }
+  
+  .blog-page .blog-content:hover .entry-content h3 a,
+  .blog-page .blog-content:hover .posted-by,
+  .blog-page .blog-content:hover .posted-on,
+  .blog-page .blog-content:hover footer li a {
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .blog-page .col-12:nth-of-type(even) .blog-content {
+      flex-flow: row-reverse !important;
+    }
+  
+    .blog-page .col-12:nth-of-type(even) .blog-content .entry-content h3::before {
+      right: -50px;
+      left: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .blog-page .col-12:nth-of-type(even) .blog-content .entry-content h3::before {
+      right: -35px;
+    }
+  
+    .blog-page .blog-content .entry-content h3 {
+      line-height: 1;
+    }
+  }
+  
+  @media screen and (min-width: 576px) {
+    .blog-page .blog-content .entry-content h3 a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .blog-page {
+      padding-top: 0;
+    }
+  
+    .blog-page .blog-content .entry-content {
+      padding: 35px 40px;
+    }
+  
+    .blog-page .blog-content .entry-content h3::before {
+      left: -50px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .blog-page .blog-content.flex-row-reverse .entry-content h3::before {
+      right: -50px;
+      left: auto;
+    }
+  }

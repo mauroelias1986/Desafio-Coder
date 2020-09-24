@@ -1,0 +1,12 @@
+Fecha		Revision	Descripcion de la rev.	
+20/09/2020	1.0.0		Titulo para cada pagina ej. "Carpinteria Ulmo - Login"
+21/09/2020	1.0.1		Meta descripcion, content: "Ulmo es una fabrica argentina de muebles, con sede en Buenos Aires y envios a todo el pais"
+21/09/2020	1.0.2		Meta keywords, content: "carpinteria, ulmo, muebles, fabrica, argentina, envios, industria, contacto, telefono, catalogo, productos, madera, disenos"
+21/09/2020	1.0.3		Estructura jerarquica en Index H1 titulo general, H2 para secciones
+21/09/2020	1.0.4 		Estructura de folders para pagina, Index en root, paginas directas en Views, y paginas de produccion en Produccion
+
+21-09-2020	1.1.0		Modularizacion de archivos SASS en carpeta css/partials
+21-09-2020	1.1.1		Creacion de pagina "mapa del sitio"
+21-09-2020	1.1.2		Mejora de tamano de texto en index para facilitar lectura
+21-09-2020	1.1.3		Cambio de titulo de galeria a "productos" siendo este mas especifico
+21-09-2020	1.1.4		Agregado de hover al logo para facilitar ver que es un link

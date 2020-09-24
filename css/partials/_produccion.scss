@@ -1,0 +1,41 @@
+// PRODUCCION ***************************************************************
+
+nav>.nav.nav-tabs {
+    border: none;
+    color: $color4;
+    background: $color1;
+  }
+  
+  nav>div a.nav-item.nav-link,
+  nav>div a.nav-item.nav-link.active {
+    border: none;
+    background: $color1;
+    color: $color4;
+  }
+  
+  nav>div a.nav-item.nav-link.active:after {
+    content: "";
+    position: relative;
+    bottom: -2px;
+    border: 10px solid transparent;
+    border-top-color: $color4;
+  }
+  
+  .tab-content {
+    line-height: 25px;
+    border: 1px solid $color4;
+    border-top: 5px solid $color4;
+    border-bottom: 5px solid $color4;
+    padding: 30px 25px;
+    height: 70vh;
+  }
+  
+  nav>div a.nav-item.nav-link:hover,
+  nav>div a.nav-item.nav-link:focus {
+    border: none;
+    background: $color2;
+    color: $color4;
+    border-radius: 0;
+    transition: background 0.20s linear;
+  }
+  

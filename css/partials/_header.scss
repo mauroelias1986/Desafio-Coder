@@ -1,0 +1,23 @@
+// HEADER ******************************
+
+header {
+    padding: 4vh;
+  
+    section {
+      padding: 150px 0;
+    }
+  }
+  
+  .logo {
+    height: 100px;
+  }
+  
+  .logo:hover {
+    opacity: 0.5;
+  }
+  
+  .navbar {
+    width: 100%;
+    transition: background-color .25s;
+    box-shadow: 2px 2px 5px;
+  }

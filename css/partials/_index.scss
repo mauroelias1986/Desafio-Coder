@@ -1,0 +1,17 @@
+// index ***************************************************************
+
+.fondo1 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, $color1 100%), url("../gallery/carpinteria.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40vh 0 40vh;
+}
+
+section {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

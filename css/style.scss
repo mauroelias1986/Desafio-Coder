@@ -1,0 +1,96 @@
+// theme ***************************************************************
+
+$color1: #25274d;
+$color2: #464866;
+$color3: #29648a;
+$color4: #aaabb8;
+$color5: black;
+$color6: #72efdd;
+
+.backcolor1 {
+  background-color: $color1;
+  color: $color4;
+}
+
+.backcolor2 {
+  background-color: $color2;
+  color: $color4;
+}
+
+.backcolor3 {
+  background-color: $color3;
+  color: $color4;
+}
+
+.backcolor4 {
+  background-color: $color4;
+  color: $color1;
+}
+
+.backcolor5 {
+  background-color: $color5;
+}
+
+.textcolor1 {
+  color: $color1;
+}
+
+.textcolor2 {
+  color: $color2;
+}
+
+.textcolor3 {
+  color: $color3;
+}
+
+.textcolor4 {
+  color: $color4;
+}
+
+// standard theme ***************************************************************
+
+body {
+  background-color: $color1;
+}
+
+.workplace {
+  display: flex;
+  padding-bottom: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 10vh;
+  min-height: 70vh;
+  align-items: center;
+}
+
+.btn {
+  margin: 5%;
+  background-color: $color1;
+  color: $color4;
+}
+
+.btn:hover {
+  background-color: $color2;
+  color: $color4;
+}
+
+// scrollbar ***************************************************************
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color4;
+}
+
+
+@import "partials/_header.scss";
+@import "partials/_galeria.scss";
+@import "partials/_login.scss";
+@import "partials/_produccion.scss";
+@import "partials/_index";
