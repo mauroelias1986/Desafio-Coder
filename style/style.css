@@ -54,6 +54,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: auto;
 }
 
 .btn {
@@ -369,7 +370,7 @@ nav > div a.nav-item.nav-link.active:after {
   border-top: 5px solid #aaabb8;
   border-bottom: 5px solid #aaabb8;
   padding: 30px 25px;
-  height: 70vh;
+  min-height: 71vh;
 }
 
 nav > div a.nav-item.nav-link:hover,
@@ -415,7 +416,7 @@ section {
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  left: 15px;
+  left: 50px;
   z-index: 100;
 }
 
