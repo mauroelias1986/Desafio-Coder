@@ -74,6 +74,10 @@ body {
   color: $color4;
 }
 
+h1 {
+  letter-spacing: 5px;
+}
+
 // scrollbar ***************************************************************
 
 ::-webkit-scrollbar {
@@ -94,3 +98,4 @@ body {
 @import "partials/_login.scss";
 @import "partials/_produccion.scss";
 @import "partials/_index";
+@import "partials/_whatsfloat";

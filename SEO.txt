@@ -10,3 +10,7 @@ Fecha		Revision	Descripcion de la rev.
 21-09-2020	1.1.2		Mejora de tamano de texto en index para facilitar lectura
 21-09-2020	1.1.3		Cambio de titulo de galeria a "productos" siendo este mas especifico
 21-09-2020	1.1.4		Agregado de hover al logo para facilitar ver que es un link
+
+26-09-2020  1.1.5       Cambio nombre de carpeta CSS a style
+26-09-2020  1.1.6       Todos los links sin destino ahora van a gracias.html
+26-09-2020  1.1.7       Floater de whatsapp y reemplazo de palabras por iconos en el header
