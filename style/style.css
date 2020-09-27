@@ -84,30 +84,6 @@ h1 {
   background: #aaabb8;
 }
 
-header {
-  padding: 4vh;
-}
-
-header section {
-  padding: 150px 0;
-}
-
-.logo {
-  height: 100px;
-}
-
-.logo:hover {
-  opacity: 0.5;
-}
-
-.navbar {
-  width: 100%;
-  -webkit-transition: background-color .25s;
-  transition: background-color .25s;
-  -webkit-box-shadow: 2px 2px 5px;
-          box-shadow: 2px 2px 5px;
-}
-
 @media screen and (min-width: 992px) {
   .outer-container {
     padding-left: 80px;
@@ -383,6 +359,125 @@ nav > div a.nav-item.nav-link:focus {
   transition: background 0.20s linear;
 }
 
+/* Include the padding and border in an element's total width and height */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+main ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+main ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+main ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+main ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+main ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+main ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Style the header */
+.headerprod {
+  background-color: #25274d;
+  padding: 30px 40px;
+  color: #aaabb8;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.headerprod:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtnprod {
+  padding: 10px;
+  width: 25%;
+  background: #25274d;
+  color: #aaabb8;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtnprod:hover {
+  background-color: #29648a;
+}
+
 .fondo1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(75%, rgba(0, 0, 0, 0.7)), to(#25274d)), url("../gallery/carpinteria.jpg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #25274d 100%), url("../gallery/carpinteria.jpg");
@@ -422,5 +517,29 @@ section {
 
 .whats-floater {
   margin-top: 10px;
+}
+
+header {
+  padding: 4vh;
+}
+
+header section {
+  padding: 150px 0;
+}
+
+.logo {
+  height: 100px;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.navbar {
+  width: 100%;
+  -webkit-transition: background-color .25s;
+  transition: background-color .25s;
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@
   <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
   <title>Carpinteria Ulmo - Produccion</title>
-  <link rel="icon" type="image/png" href="../../gallery/favicon.png" />
+  <link rel="icon" type="image/ico" href="../../gallery/favicon.ico" />
   <!-- Bootstrap core CSS -->
   <link href="../../library/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
@@ -76,49 +76,30 @@
                 </div>
               </nav>
 
-              <div class="tab-content py-1 px-3 px-sm-0" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  Planificación de la producción <br>
-                  Ir a la navegaciónIr a la búsqueda <br>
+              <div class="tab-content py-1 px-3 px-sm-0 row" id="nav-tabContent">
+                <div class="tab-pane fade show active column" id="nav-home" role="tabpanel"
+                  aria-labelledby="nav-home-tab">
                   <br>
-                  Papel de la planificación de la producción en el ciclo de producción. <br>
                   La Planificación de producción son los diversos métodos que se utilizan para sacar adelante la
                   producción en una compañía o industria. Analizando los recursos requeridos de materiales y capacidad
                   de producción, para servir las necesidades de los clientes. <br>
                   <br>
-                  Existen diferentes de métodos de producción, como producción de un solo elemento solo, producción por
-                  lotes, producción en masa, producción continua etc. cada una tiene su propia forma de planificación de
-                  la producción. <br>
-                  <br>
-                  La planificación de producción se puede combinar con el control de producción y es una parte de los
-                  sistemas de planificación de los recursos empresariales (ERP por sus siglas en Inglés). <br>
-                  <br>
-                  La planificación de la producción se utiliza en empresas de diferentes industrias, incluidas la
-                  agricultura, la industria, la industria de la diversión, etc. . . . . <br>
-                  <br>
-                  <br>
-                  Visión general <br>
-                  La planificación de la producción establece lo que puede ser fabricado por una empresa con los
-                  recursos que dispone y sus necesidades. Un plan de producción se realiza periódicamente por un período
-                  de tiempo específico, llamado el horizonte de planificación. Puede incluir las siguientes actividades:
-                  <br>
-                  Determinación de la mezcla de productos requerida y la carga de trabajo de la fábrica para satisfacer
-                  las necesidades de los clientes. <br>
-                  Ajustar el nivel requerido de producción a los recursos existentes.  <br>
-                  Programar y elegir el trabajo que se iniciará en las instalaciones de fabricación "  <br>
-                  Alistar y entregar las órdenes de producción a las instalaciones de producción.  <br>
-                  Para desarrollar los planes de producción, el planificador de producción o el departamento de
-                  planificación de la producción deben trabajar en estrecha colaboración con el departamento de
-                  marketing y el departamento de ventas. Estos departarmentos pueden proporcionar pronósticos de ventas
-                  o una lista de pedidos de clientes ".​ La programación generalmente se hace sobre de una variedad de
-                  tipos de productos que pueden requerir diferentes recursos y servir a diferentes clientes. Por lo
-                  tanto, la selección debe optimizar las medidas de rendimiento independientes del cliente, como el
-                  tiempo del ciclo y las medidas de rendimiento dependientes del cliente, como la entrega a tiempo ".  <br>
+                  <!-- programar produccion -->
+                  <div class="column">
+                    <div id="myDIV" class="headerprod">
+                      <h2 style="margin:5px">Programar producción</h2>
+                      <input type="text" id="myInput" placeholder="Tipo modelo color cantidad">
+                      <span onclick="newElement()" class="addBtnprod">Agregar</span>
+                    </div>
 
-                  Un factor crítico en la planificación de la producción es "la estimación precisa de la capacidad
-                  productiva de los recursos disponibles, sin embargo, esta es una de las tareas más difíciles de
-                  realizar bien".​ La planificación de la producción siempre debe tener en cuenta "la disponibilidad
-                  de material, la disponibilidad de recursos y el conocimiento de la demanda futura".  <br>
+                    <ul id="myULprod">
+                      <li class="liprog">Silla modelo 1 negra x 30</li>
+                      <li class="liprog checked">Mesa modelo 1 negra x 4</li>
+                      <li class="liprog">Mesa modelo 2 negra x 3</li>
+                      <li class="liprog">Silla modelo 3 verde x 6</li>
+                      <li class="liprog">Silla modelo 3 blanca x 15</li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                   Si un artículo de fabricación de una orden de fabricación es defectuoso o no tiene el nivel de calidad
@@ -182,6 +163,65 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="../../js/scrolling-nav.js"></script>
+
+  <!-- agregar programacion -->
+  <script>
+    // Create a "close" button and append it to each list item
+    var myNodelist = document.getElementsByClassName("liprog");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      myNodelist[i].appendChild(span);
+    }
+
+    // Click on a close button to hide the current list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function () {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+
+    // Add a "checked" symbol when clicking on a list item
+    var list = document.querySelector('ul');
+    list.addEventListener('click', function (ev) {
+      if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+      }
+    }, false);
+
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+      var li = document.createElement("li");
+      var inputValue = document.getElementById("myInput").value;
+      var t = document.createTextNode(inputValue);
+      li.appendChild(t);
+      if (inputValue === '') {
+        alert("You must write something!");
+      } else {
+        document.getElementById("myULprod").appendChild(li);
+      }
+      document.getElementById("myInput").value = "";
+
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      li.appendChild(span);
+
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+          var div = this.parentElement;
+          div.style.display = "none";
+        }
+      }
+    }
+  </script>
 
 </body>
 

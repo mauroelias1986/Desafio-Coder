@@ -93,10 +93,9 @@ h1 {
   background: $color4;
 }
 
-
-@import "partials/_header.scss";
 @import "partials/_galeria.scss";
 @import "partials/_login.scss";
 @import "partials/_produccion.scss";
 @import "partials/_index";
 @import "partials/_whatsfloat";
+@import "partials/_header.scss";
