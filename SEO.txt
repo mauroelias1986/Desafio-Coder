@@ -14,3 +14,4 @@ Fecha		Revision	Descripcion de la rev.
 26-09-2020  1.1.5       Cambio nombre de carpeta CSS a style
 26-09-2020  1.1.6       Todos los links sin destino ahora van a gracias.html
 26-09-2020  1.1.7       Floater de whatsapp y reemplazo de palabras por iconos en el header
+27-09-2020  1.1.8       Favicon.ico y varios fixes
