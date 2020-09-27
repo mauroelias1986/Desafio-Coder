@@ -94,7 +94,7 @@
 
                     <ul id="myULprod">
                       <li class="liprog">Silla modelo 1 negra x 30</li>
-                      <li class="liprog checked">Mesa modelo 1 negra x 4</li>
+                      <li class="liprog">Mesa modelo 1 negra x 4</li>
                       <li class="liprog">Mesa modelo 2 negra x 3</li>
                       <li class="liprog">Silla modelo 3 verde x 6</li>
                       <li class="liprog">Silla modelo 3 blanca x 15</li>
@@ -187,14 +187,6 @@
       }
     }
 
-    // Add a "checked" symbol when clicking on a list item
-    var list = document.querySelector('ul');
-    list.addEventListener('click', function (ev) {
-      if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-      }
-    }, false);
-
     // Create a new list item when clicking on the "Add" button
     function newElement() {
       var li = document.createElement("li");
@@ -202,7 +194,7 @@
       var t = document.createTextNode(inputValue);
       li.appendChild(t);
       if (inputValue === '') {
-        alert("You must write something!");
+        alert("Debes escribir una programación con el formato tipo modelo color y cantidad");
       } else {
         document.getElementById("myULprod").appendChild(li);
       }

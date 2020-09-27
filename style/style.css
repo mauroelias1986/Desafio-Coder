@@ -375,7 +375,7 @@ main ul {
 main ul li {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding: 12px 12px 12px 12px;
   list-style-type: none;
   background: #eee;
   font-size: 18px;
@@ -396,13 +396,6 @@ main ul li:nth-child(odd) {
 /* Darker background-color on hover */
 main ul li:hover {
   background: #ddd;
-}
-
-/* When clicked on, add a background color and strike out text */
-main ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
