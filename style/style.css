@@ -535,4 +535,55 @@ header section {
   -webkit-box-shadow: 2px 2px 5px;
           box-shadow: 2px 2px 5px;
 }
+
+.tooltip-inner {
+  background-color: #464866;
+}
+
+.zoom {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+li {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 /*# sourceMappingURL=style.css.map */
