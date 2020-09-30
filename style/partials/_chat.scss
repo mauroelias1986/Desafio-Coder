@@ -1,3 +1,4 @@
+// widget
 .chat-app {
     position: fixed;
     width:80px;
@@ -52,7 +53,6 @@
     top: 0;
     right: 25px;
     font-size: 36px;
-
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -330,7 +330,7 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width: 576px) {
+@media(max-width: 500px) {
     .contacts_card {
         margin-bottom: 15px !important;
     }
