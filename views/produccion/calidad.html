@@ -29,9 +29,8 @@
     <nav class="container">
       <a href="../../index.html#top"><img src="../../gallery/logo.png" class="navbar-brand js-scroll-trigger logo"
           href="../../index.html#page-top"></a>
-      <button class="btn navbar-toggler textcolor4" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="btn navbar-toggler textcolor4" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <i class="fa fa-bars"></i>
       </button>
@@ -51,45 +50,68 @@
           </li>
         </ul>
       </div>
-     </nav>
-</header>
+    </nav>
+  </header>
 
   <!-- main-->
   <main>
+
+    <!-- chat widget -->
+    <a class="chat-app zoom">
+      <i class="fas fa-comments chat-floater textcolor4" onclick="openNav()"></i>
+    </a>
+
     <div class="backcolor3 textcolor4 workplace">
       <div class="container-fluid">
 
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 ">
+            <div class="col-xs-12 padding-prod">
 
               <nav>
                 <div class="nav nav nav-fill" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Calidad</a>
+                    aria-controls="nav-home" aria-selected="true">Programacion</a>
                   <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                    aria-controls="nav-profile" aria-selected="false">Rechazos</a>
+                    aria-controls="nav-profile" aria-selected="false">Stock</a>
                   <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                    aria-controls="nav-contact" aria-selected="false">Desvios</a>
+                    aria-controls="nav-contact" aria-selected="false">Mantenimiento</a>
                   <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
-                    aria-controls="nav-about" aria-selected="false">KPIs</a>
+                    aria-controls="nav-about" aria-selected="false">Flujograma</a>
                 </div>
               </nav>
 
-              <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  La calidad es una propiedad inherente de cualquier cosa que permite que la misma sea valorada con
-                  respecto a cualquier otra de su misma especie. La palabra calidad tiene múltiples significados. De
-                  forma básica, se refiere al conjunto de propiedades inherentes a un objeto que le confieren capacidad
-                  para satisfacer necesidades implícitas o explícitas. Por otro lado, la calidad de un producto o
-                  servicio es la percepción que el cliente tiene del mismo, es una fijación mental del consumidor que
-                  asume conformidad con dicho producto o servicio y la capacidad del mismo para satisfacer sus
-                  necesidades. Por tanto, debe definirse en el contexto que se esté considerando, por ejemplo, la
-                  calidad del servicio postal, del servicio dental, del producto, de vida, etc.
+              <div class="tab-content py-1 px-3 px-sm-0 row" id="nav-tabContent">
+                <div class="tab-pane fade show active column" id="nav-home" role="tabpanel"
+                  aria-labelledby="nav-home-tab">
 
+                  <p> <br> La Planificación de producción son los diversos métodos que se utilizan para sacar adelante
+                    la
+                    producción en una compañía o industria. Analizando los recursos requeridos de materiales y
+                    capacidad
+                    de producción, para servir las necesidades de los clientes. <br>
+                    <br></p>
+
+                  <!-- programar produccion -->
+                  <div class="column">
+                    <div id="myDIV" class="headerprod">
+                      <h2 style="margin:5px">Programar producción</h2>
+                      <input type="text" id="myInput" placeholder="Tipo modelo color cantidad">
+                      <span onclick="newElement()" class="addBtnprod">Agregar</span>
+                    </div>
+
+                    <ul id="myULprod">
+                      <li class="liprog">Silla modelo 1 negra x 30</li>
+                      <li class="liprog">Mesa modelo 1 negra x 4</li>
+                      <li class="liprog">Mesa modelo 2 negra x 3</li>
+                      <li class="liprog">Silla modelo 3 verde x 6</li>
+                      <li class="liprog">Silla modelo 3 blanca x 15</li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  Si un artículo de fabricación de una orden de fabricación es defectuoso o no tiene el nivel de calidad
+                  Si un artículo de fabricación de una orden de fabricación es defectuoso o no tiene el nivel de
+                  calidad
                   necesario, debe registrarlo como rechazado.
                   <br>
                   Para registrar un artículo como rechazado, especifique la cantidad rechazada en el campo Rechazado de
@@ -126,6 +148,208 @@
 
       </div>
     </div>
+
+    <!-- collapse sidebar -->
+    <div id="mySidebar" class="sidebar">
+
+      <!-- contact list chat -->
+      <div class="container-fluid h-100">
+        <div class="row justify-content-center h-100">
+          <div class="col-md-6 col-xl-4 chat">
+            <div class="card mb-sm-3 mb-md-0 contacts_card">
+              <div class="card-header">
+                <div class="input-group">
+                  <input type="text" placeholder="Search..." name="" class="form-control search">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body contacts_body">
+                <ui class="contacts">
+                  <li class="active">
+                    <div class="d-flex bd-highlight">
+                      <div class="img_cont">
+                        <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                          class="rounded-circle user_img">
+                        <span class="online_icon"></span>
+                      </div>
+                      <div class="user_info">
+                        <span>Mauro</span>
+                        <p>Mauro esta online</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex bd-highlight">
+                      <div class="img_cont">
+                        <img
+                          src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg"
+                          class="rounded-circle user_img">
+                        <span class="online_icon offline"></span>
+                      </div>
+                      <div class="user_info">
+                        <span>Sabrina</span>
+                        <p>Esta ocupada</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex bd-highlight">
+                      <div class="img_cont">
+                        <img
+                          src="data:image/jpeg;base64,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"
+                          class="rounded-circle user_img">
+                        <span class="online_icon"></span>
+                      </div>
+                      <div class="user_info">
+                        <span>Daniel</span>
+                        <p>Daniel esta online</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex bd-highlight">
+                      <div class="img_cont">
+                        <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/288/625/69c.png"
+                          class="rounded-circle user_img">
+                        <span class="online_icon offline"></span>
+                      </div>
+                      <div class="user_info">
+                        <span>Alejandro</span>
+                        <p>Alejandro esta offline</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex bd-highlight">
+                      <div class="img_cont">
+                        <img src="https://static.turbosquid.com/Preview/001214/650/2V/boy-cartoon-3D-model_D.jpg"
+                          class="rounded-circle user_img">
+                        <span class="online_icon offline"></span>
+                      </div>
+                      <div class="user_info">
+                        <span>Jose</span>
+                        <p>Jose esta ocupado</p>
+                      </div>
+                    </div>
+                  </li>
+                </ui>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+
+          <!-- chat -->
+          <div class="col-md-6 col-xl-6 chat">
+            <div class="card">
+              <div class="card-header msg_head">
+                <div class="d-flex bd-highlight">
+                  <div class="img_cont">
+                    <img src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
+                      class="rounded-circle user_img">
+                    <span class="online_icon"></span>
+                  </div>
+                  <div class="user_info">
+                    <span>Chat con Daniel</span>
+                    <p>1767 Messages</p>
+                  </div>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              </div>
+              <div class="card-body msg_card_body">
+                <div class="d-flex justify-content-start mb-4">
+                  <div class="img_cont_msg">
+                    <img src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
+                      class="rounded-circle user_img_msg">
+                  </div>
+                  <div class="msg_cotainer">
+                    Hola Mauro
+                    <span class="msg_time">8:40 AM, Hoy</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mb-4">
+                  <div class="msg_cotainer_send">
+                    Hola Daniel todo bien?
+                    <span class="msg_time_send">8:55 AM, Hoy</span>
+                  </div>
+                  <div class="img_cont_msg">
+                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                      class="rounded-circle user_img_msg">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start mb-4">
+                  <div class="img_cont_msg">
+                    <img src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
+                      class="rounded-circle user_img_msg">
+                  </div>
+                  <div class="msg_cotainer">
+                    Si todo bien, porque no terminaron ayer la orden 4?
+                    <span class="msg_time">9:00 AM, Hoy</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mb-4">
+                  <div class="msg_cotainer_send">
+                    Se rompio la agujereadora al mediodia
+                    <span class="msg_time_send">9:05 AM, Hoy</span>
+                  </div>
+                  <div class="img_cont_msg">
+                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                      class="rounded-circle user_img_msg">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start mb-4">
+                  <div class="img_cont_msg">
+                    <img src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
+                      class="rounded-circle user_img_msg">
+                  </div>
+                  <div class="msg_cotainer">
+                    Podes reprogramar segun stock semielaborado?
+                    <span class="msg_time">9:07 AM, Hoy</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mb-4">
+                  <div class="msg_cotainer_send">
+                    Dale ya lo preparo
+                    <span class="msg_time_send">9:10 AM, Hoy</span>
+                  </div>
+                  <div class="img_cont_msg">
+                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                      class="rounded-circle user_img_msg">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start mb-4">
+                  <div class="img_cont_msg">
+                    <img src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
+                      class="rounded-circle user_img_msg">
+                  </div>
+                  <div class="msg_cotainer">
+                    Joya, hablamos
+                    <span class="msg_time">9:12 AM, Hoy</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="input-group">
+                  <div class="input-group-append">
+                    <span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+                  </div>
+                  <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+                  <div class="input-group-append">
+                    <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- aca termina el chat -->
+    </div>
+
+    <!-- aca termina el sidebar -->
+
   </main>
 
   <!-- Footer -->
@@ -150,6 +374,9 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="../../js/scrolling-nav.js"></script>
+
+  <!-- chat -->
+  <script src="../../js/chat.js"></script>
 
 </body>
 

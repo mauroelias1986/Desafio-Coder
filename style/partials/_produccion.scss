@@ -17,15 +17,10 @@ nav>.nav.nav-tabs {
     content: "";
     position: relative;
     bottom: -2px;
-    border: 10px solid transparent;
-    border-top-color: $color4;
+
   }
   
   .tab-content {
-    line-height: 25px;
-    border: 1px solid $color4;
-    border-top: 5px solid $color4;
-    border-bottom: 5px solid $color4;
     padding: 30px 25px;
     min-height: 71vh;
   }
