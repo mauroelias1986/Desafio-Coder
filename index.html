@@ -26,39 +26,38 @@
 
   <!-- Navigation -->
   <header class="navbar navbar-expand-lg fixed-top backcolor1 d-inline-flex" id="mainNav">
-      <div class="container">
-        <a href="#top"><img src="gallery/logo.png" class="navbar-brand js-scroll-trigger logo" href="#page-top"></a>
-        <button class="btn navbar-toggler textcolor4" type="button" data-toggle="collapse"
-          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger textcolor4" href="#nosotros">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger textcolor4" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger textcolor4" href="#contacto">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger textcolor4" href="/views/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger textcolor4" href="/views/login.html" data-toggle="tooltip"
-                title="Log in!"><i class="fas fa-user"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger textcolor4" href="/views/map.html" data-toggle="tooltip"
-                title="Mapa del sitio"><i class="fas fa-map-signs"></i></a>
-            </li>
-          </ul>
-        </div>
+    <div class="container">
+      <a href="#top"><img src="gallery/logo.png" class="navbar-brand js-scroll-trigger logo zoom" href="#page-top"></a>
+      <button class="btn navbar-toggler textcolor4" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger textcolor4 zoom" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger textcolor4 zoom" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger textcolor4 zoom" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger textcolor4 zoom" href="/views/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger textcolor4 zoom" href="/views/login.html" data-toggle="tooltip"
+              title="Log in!"><i class="fas fa-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger textcolor4 zoom" href="/views/map.html" data-toggle="tooltip"
+              title="Mapa del sitio"><i class="fas fa-map-signs"></i></a>
+          </li>
+        </ul>
       </div>
+    </div>
   </header>
 
   <main>
@@ -144,7 +143,7 @@
             <form class="form-inline d-flex" action="views/gracias.html">
               <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
                 placeholder="Enter email address..." />
-              <button class="btn mx-auto" type="submit">Subscribirse</button>
+              <button class="btn mx-auto zoom" type="submit">Subscribirse</button>
             </form>
           </div>
         </div>
@@ -156,7 +155,7 @@
     <section class="contact-section text-decoration-none d-flex align-items-center justify-content-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-3 mb-md-0">
+          <div class="col-md-4 mb-3 mb-md-0 zoom">
             <div class="card py-xs-2 py-sm-5 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-map-marked-alt mb-2"></i>
@@ -166,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3 mb-md-0">
+          <div class="col-md-4 mb-3 mb-md-0 zoom">
             <div class="card py-xs-2 py-sm-5 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-envelope mb-2"></i>
@@ -178,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3 mb-md-0">
+          <div class="col-md-4 mb-3 mb-md-0 zoom">
             <div class="card py-xs-2 py-sm-5 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-mobile-alt mb-2"></i>
@@ -197,9 +196,55 @@
       <i class="fab fa-whatsapp whats-floater" aria-hidden="true"></i>
     </a>
 
+    <!-- index chat widget -->
+      <a class="chat-app2 zoom">
+        <button class="fas fa-comments chat-floater textcolor4 openbtn"  data-toggle="tooltip"
+        title="Chatea con nosotros!" onclick="openNav()"></button>
+    </div>
+    
+<!-- collapsable sidebar -->
+<div id="mySidebar" class="sidebar">
+
+      <!-- chat -->
+      <div class="col-md-8 col-xl-6 chat">
+        <div class="card">
+          <div class="card-header msg_head">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          </div>
+          <div class="card-body msg_card_body textcolor1">
+            <div class="d-flex justify-content-start mb-4">
+              <div class="img_cont_msg">
+                <img src="gallery/logo.png"
+                  class="rounded-circle user_img_msg">
+              </div>
+              <div class="msg_cotainer">
+                Hola , en que puedo ayudarte?
+                <span class="msg_time">8:40 AM, Hoy</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="input-group">
+              <div class="input-group-append">
+                <span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+              </div>
+              <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+              <div class="input-group-append">
+                <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- aca termina el chat -->
+</div>
+
+<!-- aca termina el sidebar -->
+
   </main>
-
-
 
   <!-- Footer -->
   <footer class="py-5">
@@ -223,6 +268,9 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/chat.js"></script>
 
 </body>
 

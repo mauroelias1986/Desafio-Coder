@@ -1,4 +1,3 @@
-// sidebar
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "800px";
@@ -9,8 +8,6 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
-
-// CHAT
 
 $(document).ready(function () {
   $('#action_menu_btn').click(function () {

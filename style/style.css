@@ -551,20 +551,8 @@ header section {
 }
 
 .zoom:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
-li {
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .tooltip {
@@ -601,6 +589,20 @@ li:hover {
   text-align: center;
   font-size: 50px;
   left: 50px;
+  z-index: 100;
+}
+
+.chat-app2 {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  background-color: #464866;
+  color: #aaabb8;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  right: 50px;
   z-index: 100;
 }
 
@@ -659,6 +661,7 @@ li:hover {
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
+    width: 40px;
   }
   .sidebar a {
     font-size: 18px;
@@ -668,6 +671,7 @@ li:hover {
 .chat {
   margin-top: auto;
   margin-bottom: auto;
+  max-width: 400px;
 }
 
 .card {
