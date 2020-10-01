@@ -84,6 +84,18 @@
               <div class="tab-content py-1 px-3 px-sm-0 row" id="nav-tabContent">
                 <div class="tab-pane fade show active column" id="nav-home" role="tabpanel"
                   aria-labelledby="nav-home-tab">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ad animi quo aliquam, dolores
+                  saepe eum repellendus unde in. Reprehenderit fugiat doloribus tenetur quibusdam tempore libero,
+                  necessitatibus impedit deserunt. Ut odio culpa commodi, atque ad facilis? Molestiae dicta beatae
+                  incidunt ipsa, libero quia, sed porro suscipit ut nesciunt, earum possimus distinctio voluptatibus
+                  officia. Enim maxime nihil tenetur tempora, est odio consequuntur aliquid hic. Ut provident,
+                  dignissimos sunt optio maiores deleniti saepe reiciendis quod atque explicabo incidunt fugiat nemo,
+                  magni necessitatibus dolorum quibusdam sed. At, dolores? Sint obcaecati voluptas nisi fugit
+                  doloremque! Nihil, esse nobis ullam temporibus quisquam, ad labore culpa illo, aspernatur adipisci
+                  explicabo quas animi! Laborum fugiat libero ab fuga obcaecati. Doloremque consequuntur, excepturi
+                  eligendi, vitae laudantium odit in sequi id impedit tenetur nam qui atque nemo corrupti a omnis fugit
+                  iure quasi eos nisi! Cupiditate, quod ipsum. Dolorum cupiditate aliquam ipsa? Impedit minima officia,
+                  obcaecati nisi ipsam vitae?
                   Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
                   veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
                   non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non
@@ -94,6 +106,14 @@
                   occaecat anim ullamco ad duis occaecat ex.
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quia perferendis quam dignissimos alias
+                  quibusdam nobis distinctio quas! Quos expedita, minus at sunt facilis, qui incidunt placeat ad
+                  asperiores voluptatibus velit cumque! Quisquam illum sapiente laudantium dolores rem, cumque ipsa
+                  dolorem temporibus quidem alias consectetur tempora adipisci earum tenetur impedit reiciendis
+                  similique numquam nulla voluptas sequi voluptate harum eius. Voluptatum, libero quidem tempore
+                  temporibus blanditiis enim minus vitae ipsam dolorum cum possimus voluptas nemo non quam corporis
+                  numquam molestias. Ex nesciunt autem nemo ducimus aut id enim tenetur beatae libero deleniti. Dolores
+                  dicta eveniet quam voluptatum dolor laboriosam ducimus!
                   Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
                   veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
                   non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non
@@ -104,6 +124,10 @@
                   occaecat anim ullamco ad duis occaecat ex.
                 </div>
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tenetur consequatur accusantium
+                  similique vel rem odio nesciunt, temporibus eaque laboriosam ipsam neque modi placeat veniam commodi
+                  rerum optio, praesentium reprehenderit asperiores! Mollitia nihil quo in earum cupiditate, tempora
+                  animi officia!
                   Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
                   veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
                   non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non
@@ -114,6 +138,9 @@
                   occaecat anim ullamco ad duis occaecat ex.
                 </div>
                 <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia officiis recusandae laudantium ad
+                  eius voluptatem incidunt sequi fugiat praesentium, ex beatae aperiam accusamus nesciunt nemo neque
+                  velit sint suscipit quaerat.
                   Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat
                   veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit
                   non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non
@@ -357,11 +384,26 @@
   <!-- Custom JavaScript for this theme -->
   <script src="../../js/scrolling-nav.js"></script>
 
-  <!-- chat -->
-  <script src="../../js/chat.js"></script>
+    <!-- chat -->
+    <script src="../../js/chat.js"></script>
 
-  <!-- programacion -->
-  <script src="../../js/programacion.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "800px";
+        document.getElementById("main").style.marginLeft = "800px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+      $(document).ready(function () {
+        $('#action_menu_btn').click(function () {
+          $('.action_menu').toggle();
+        });
+      });
+    </script>
 
 </body>
 
