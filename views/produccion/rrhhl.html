@@ -29,9 +29,8 @@
     <nav class="container">
       <a href="../../index.html#top"><img src="../../gallery/logo.png" class="navbar-brand js-scroll-trigger logo"
           href="../../index.html#page-top"></a>
-      <button class="btn navbar-toggler textcolor4" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="btn navbar-toggler textcolor4" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <i class="fa fa-bars"></i>
       </button>
@@ -72,13 +71,13 @@
               <nav>
                 <div class="nav nav nav-fill" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Programacion</a>
+                    aria-controls="nav-home" aria-selected="true">Capacitaciones</a>
                   <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                    aria-controls="nav-profile" aria-selected="false">Stock</a>
+                    aria-controls="nav-profile" aria-selected="false">Recibos</a>
                   <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                    aria-controls="nav-contact" aria-selected="false">Mantenimiento</a>
+                    aria-controls="nav-contact" aria-selected="false">Ausentismo</a>
                   <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
-                    aria-controls="nav-about" aria-selected="false">Flujograma</a>
+                    aria-controls="nav-about" aria-selected="false">Adelantos</a>
                 </div>
               </nav>
 
@@ -86,29 +85,10 @@
                 <div class="tab-pane fade show active column" id="nav-home" role="tabpanel"
                   aria-labelledby="nav-home-tab">
 
-                  <p> <br> La Planificación de producción son los diversos métodos que se utilizan para sacar adelante
-                    la
-                    producción en una compañía o industria. Analizando los recursos requeridos de materiales y
-                    capacidad
-                    de producción, para servir las necesidades de los clientes. <br>
-                    <br></p>
-
-                  <!-- programar produccion -->
-                  <div class="column">
-                    <div id="myDIV" class="headerprod">
-                      <h2 style="margin:5px">Programar producción</h2>
-                      <input type="text" id="myInput" placeholder="Tipo modelo color cantidad">
-                      <span onclick="newElement()" class="addBtnprod">Agregar</span>
-                    </div>
-
-                    <ul id="myULprod">
-                      <li class="liprog">Silla modelo 1 negra x 30</li>
-                      <li class="liprog">Mesa modelo 1 negra x 4</li>
-                      <li class="liprog">Mesa modelo 2 negra x 3</li>
-                      <li class="liprog">Silla modelo 3 verde x 6</li>
-                      <li class="liprog">Silla modelo 3 blanca x 15</li>
-                    </ul>
-                  </div>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis inventore saepe quasi consequatur
+                  illo, dolore odit illum quis quibusdam autem ipsa ex enim, iusto at dolores accusamus corporis culpa
+                  tempore nemo. Quo, molestiae. Id, impedit optio totam natus porro excepturi laborum fugit rem quidem
+                  facilis perspiciatis pariatur nulla nesciunt quos.
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                   Si un artículo de fabricación de una orden de fabricación es defectuoso o no tiene el nivel de
@@ -375,9 +355,32 @@
   <!-- Custom JavaScript for this theme -->
   <script src="../../js/scrolling-nav.js"></script>
 
-   <!-- chat -->
-   <script src="../../js/chat.js"></script>
-   
+  <!-- chat -->
+  <script src="../../js/chat.js"></script>
+
+
+  <script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "800px";
+      document.getElementById("main").style.marginLeft = "800px";
+    }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+
+    // CHAT
+
+    $(document).ready(function () {
+      $('#action_menu_btn').click(function () {
+        $('.action_menu').toggle();
+      });
+    });
+  </script>
+
 </body>
 
 </html>
